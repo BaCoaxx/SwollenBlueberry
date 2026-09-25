@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "accounts": [
+    {
+      "id": "00000000-0000-4000-8000-000000000001",
+      "title": "Main",
+      "email": "you@example.com",
+      "password": "REPLACE_ME",
+      "character": "Character Name",
+      "gwpath": "/path/to/client1/Gw.exe",
+      "extraargs": "",
+      "wine_prefix": "",
+      "wine_bin": "",
+      "auto_relaunch": true
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000002",
+      "title": "",
+      "email": "alt@example.com",
+      "password": "REPLACE_ME",
+      "character": "Alt Character",
+      "gwpath": "/path/to/client2/Gw.exe",
+      "extraargs": "-windowed",
+      "wine_prefix": "/path/to/wineprefix-alt",
+      "wine_bin": "",
+      "auto_relaunch": true
+    }
+  ]
+}

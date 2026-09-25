@@ -1,0 +1,4 @@
+{
+  "wine_bin": "wine",
+  "poll_interval_ms": 1000
+}

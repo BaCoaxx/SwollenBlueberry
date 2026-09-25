@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gwmultilaunch"
+version = "1.0.1"
+description = "Minimalist Linux launcher for multiple Guild Wars clients via Wine."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+    "PySide6==6.11.2",
+    "cryptography==50.0.1",
+    "psutil==7.2.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1"]
+
+[project.scripts]
+gwmultilaunch = "gwmultilaunch.cli:main"
+gwmultilaunch-standin = "gwmultilaunch.standin:main"
+
+[tool.setuptools.packages.find]
+include = ["gwmultilaunch*"]
+
+[tool.setuptools.package-data]
+gwmultilaunch = ["assets/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
